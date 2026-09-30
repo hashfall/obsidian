@@ -1,6 +1,6 @@
 ---
 title: Quiz Arena — Diagramas UML
-tags: [quiz-arena, uml, plantuml,架构, arquitetura, dominio]
+tags: [quiz-arena, uml, plantuml, arquitetura, dominio, fluxograma]
 status: vivo
 criado: 2026-09-30
 atualizado: 2026-09-30
@@ -44,7 +44,8 @@ Suíte completa de diagramas UML do Quiz Arena, escrita em **PlantUML** (blocos
 
 - `«interface»` contrato; `«middleware»` função que intercepta requisição;
   `«repository»` único lugar que toca o Firestore; `«service»` regra de negócio.
-- `[I]` imutável na prática, `[E]` escrita pontual.
+- `<<repository>>` marca o único lugar que toca o Firestore; `<<service>>`, regra de
+  negócio; `<<router>>` e `<<middleware>>`, a camada HTTP.
 - `<<include>>` sempre executado; `<<extend>>` condicional.
 - Rótulo `⚠️` marca armadilha conhecida do repositório (ver `AGENTS.md`).
 
@@ -150,6 +151,7 @@ pelo backend, e a composição reproduz o caminho real das subcoleções.
 
 ```plantuml
 @startuml
+!pragma layout elk
 title Quiz Arena — Modelo de domínio (documentos do Firestore)
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -322,10 +324,10 @@ As camadas fixas, uma direção só. `→` é dependência de módulo; ninguém 
 
 ```plantuml
 @startuml
+!pragma layout elk
 title Quiz Arena — Componentes do backend (server/)
 skinparam classAttributeIconSize 0
 skinparam shadowing false
-skinparam linetype ortho
 
 package "server/ (Vite middleware em dev, Express em produção)" {
   class Bootstrap <<bootstrap>> {
@@ -570,6 +572,7 @@ com o prefixo de tela (`Current*`).
 
 ```plantuml
 @startuml
+!pragma layout elk
 title Quiz Arena — Modelo do frontend (src/)
 skinparam classAttributeIconSize 0
 skinparam shadowing false
@@ -887,12 +890,13 @@ alt ainda não há sorteio do dia
   SS -> QR : garantirQuizDoDia(hoje, questoes)
   QR -> FS : create quiz_do_dia/{dia}
   SS --> QS : QuizDoDia
-  note right of SS
-    Idempotente: se o documento
-    já existe com questões,
-    não sorteia de novo.
-  end note
 end
+
+note right of SS
+  Idempotente: se o documento
+  já existe com questões,
+  não sorteia de novo.
+end note
 
 QR --> QS : QuizDoDia
 QS -> PR : obterPlayer(playerId)
@@ -902,11 +906,11 @@ par respostas do dia
   QS -> RR : listarRespostasDoDia(playerId, dia)
   RR -> FS : .../respostas/{dia}/itens
   RR --> QS : ItemResposta[]
-and ranking global
+else ranking global
   QS -> PR : listarRanking(50)
   PR -> FS : orderBy pontuacaoTotal desc, limit 50
   PR --> QS : PlayerPublico[]
-and tema e histórico
+else tema e histórico
   QS -> QR : listarTemas(6)
   QR -> FS : temas orderBy data desc
   QR --> QS : Tema[]
@@ -1109,7 +1113,7 @@ endif
 
 stop
 
-note bottom
+note right
   <b>Desempate por especificidade</b>
   alternativas: "Luiz Inácio Lula da Silva" | "Lula da Silva" | "Lula"
   jogador escreve "Lula da Silva" -> 2/2 na longa e 1/1 em "Lula"
@@ -1270,7 +1274,7 @@ start
 :imprimir relatório\n(dia processado, dia gerado,\nnovas questões, repontuadas, top 10);
 stop
 
-note bottom
+note right
   <b>Comandos</b>
   npm run script:dia -- 2026-10-01
   npm run reset:dia -- --zerar-pontuacoes
@@ -1339,7 +1343,7 @@ note right
   A mais rara das 7 questões\nfica com o teto.
 end note
 
-note bottom
+note right
   <b>Fase 1 vs fase 2</b>
   No envio da resposta vale
   pesoProvisional = 100
@@ -1375,7 +1379,7 @@ state Jogando {
   state Enviando
   state Conferida
   state Falha
-  state RoundFinal
+  state RodadaEncerrada
 }
 
 state Enviando : status = sending
@@ -1394,11 +1398,11 @@ state AguardandoResposta {
   Enviando --> Conferida : 201 { casou, pontos }
   Enviando --> Falha : 401 / 409 / 422 / 500
   Falha --> AguardandoResposta : corrigir e reenviar
-  Conferida --> RoundFinal : todas as 7 respondidas
+  Conferida --> RodadaEncerrada : todas as 7 respondidas
   Conferida --> AguardandoResposta : GET /rodada devolve\nquestaoAtual
 }
 
-RoundFinal --> AguardandoResposta : novo dia\n(GET /rodada)
+RodadaEncerrada --> AguardandoResposta : novo dia\n(GET /rodada)
 Jogando --> SemSessao : Sair\n(token apagado)
 
 note right of Conferida
@@ -1413,7 +1417,7 @@ note right of Conferida
   aparece.
 end note
 
-note right of RoundFinal
+note right of RodadaEncerrada
   Rodada encerrada mostra
   posição e pontuação e avisa
   que o peso real sai da
@@ -1573,7 +1577,7 @@ node "Máquina do operador" as OPS {
   artifact "tsx\nseed, script:dia,\nreset:dia, testes" as CLI
 }
 
-node "nginx /负载 balancer" as LB {
+node "nginx / balanceador" as LB {
   artifact "proxy_pass :6767" as NGINX
 }
 
@@ -1660,3 +1664,20 @@ end note
   desejado; o comportamento real está em `server/services/peso.service.ts` e
   `server/services/script-diario.service.ts`. Se divergirem, o código ganha — e o
   diagrama precisa ser corrigido junto, sem parar para perguntar.
+
+> [!success] Verificado com o PlantUML 1.2024.7
+> Os 15 blocos passaram no `-checkonly` **e** foram renderizados para SVG.
+>
+> Três armadilhas do PlantUML já encontradas e corrigidas aqui, para quem for mexer
+> nos diagramas depois:
+>
+> - `note` **solta com `bottom`** dentro de `activityDiagram` é rejeitado. Use
+>   `note right` / `note left`, ou ancore a nota numa atividade.
+> - `note` **não** pode ficar dentro de `alt` / `else` de `sequenceDiagram`. Mova a
+>   nota para o nível de cima da lista.
+> - Em `sequenceDiagram`, os ramos de `par` depois do primeiro usam `else`, não `and`.
+>
+> Os diagramas de classe (2, 3 e 4) abrem com `!pragma layout elk`: eles são densos
+> demais e o motor Smetana (usado quando o `dot` do Graphviz não está instalado) não
+> consegue dar layout neles. Se a sua versão do plugin reclamar do `!pragma`, pode
+> apagar a linha — o diagrama continua válido, só o layout muda.
