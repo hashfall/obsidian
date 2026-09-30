@@ -1,0 +1,326 @@
+[
+  {
+    "at": 1790775900044,
+    "kind": "apply",
+    "remote": null,
+    "status": "ok",
+    "changed": 15,
+    "issues": 0,
+    "desc": "15 items applied",
+    "results": [
+      {
+        "group": "graph",
+        "status": "ok",
+        "filesWritten": [
+          ".obsidian/graph.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": true,
+        "changes": {
+          "added": [
+            "graph.json"
+          ],
+          "updated": [],
+          "deleted": []
+        }
+      },
+      {
+        "group": "plugin-auto-note-mover",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 1.2.0"
+        }
+      },
+      {
+        "group": "plugin-darlal-switcher-plus",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 6.2.0"
+        }
+      },
+      {
+        "group": "plugin-dataview",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 0.5.68"
+        }
+      },
+      {
+        "group": "plugin-obsidian-excalidraw-plugin",
+        "status": "ok",
+        "filesWritten": [
+          ".obsidian/plugins/obsidian-excalidraw-plugin/data.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [
+            "data.json"
+          ],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed & enabled 2.28.1"
+        }
+      },
+      {
+        "group": "plugin-excalidraw-stylus-menu",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 1.0.1"
+        }
+      },
+      {
+        "group": "plugin-obsidian-linter",
+        "status": "ok",
+        "filesWritten": [
+          ".obsidian/plugins/obsidian-linter/data.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [
+            "data.json"
+          ],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed & enabled 1.33.0"
+        }
+      },
+      {
+        "group": "plugin-obsidian-git",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 2.40.0"
+        }
+      },
+      {
+        "group": "plugin-obsidian-kanban",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 2.0.51"
+        }
+      },
+      {
+        "group": "plugin-obsidian-pandoc",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 0.4.1"
+        }
+      },
+      {
+        "group": "plugin-short-internal-links-to-headings",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 1.1.5"
+        }
+      },
+      {
+        "group": "plugin-templater-obsidian",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 2.25.1"
+        }
+      },
+      {
+        "group": "plugin-url-into-selection",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 1.11.4"
+        }
+      },
+      {
+        "group": "plugin-various-complements",
+        "status": "ok",
+        "filesWritten": [],
+        "filesDeleted": [],
+        "messages": [
+          "no settings in the store; installed the plugin only"
+        ],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [],
+          "deleted": []
+        },
+        "stateNote": {
+          "kind": "ok",
+          "text": "⤓ installed 11.4.2"
+        }
+      },
+      {
+        "group": "community-plugins",
+        "status": "ok",
+        "filesWritten": [
+          ".obsidian/community-plugins.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [
+            "community-plugins.json"
+          ],
+          "deleted": []
+        }
+      }
+    ]
+  },
+  {
+    "at": 1790775868343,
+    "kind": "adopt",
+    "remote": null,
+    "status": "ok",
+    "changed": 1,
+    "issues": 0,
+    "desc": "1 item adopted",
+    "results": [
+      {
+        "group": "plugin-config-sync",
+        "status": "ok",
+        "filesWritten": [
+          ".obsidian/plugins/config-sync/data.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [
+            "data.json"
+          ],
+          "deleted": []
+        }
+      }
+    ]
+  }
+]

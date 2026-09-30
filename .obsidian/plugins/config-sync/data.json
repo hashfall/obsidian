@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 5,
+  "pkmMode": "auto",
+  "rootPath": "",
+  "remotes": [
+    {
+      "name": "laptop",
+      "type": "git",
+      "url": "https://github.com/hashfall/obsidian.git",
+      "branch": "main"
+    }
+  ],
+  "ribbonButtons": {
+    "sync": false
+  },
+  "statusInMenu": true,
+  "statusBarItem": true,
+  "statusBarRemote": true,
+  "ribbonDot": false,
+  "mobileStatusBar": false,
+  "remoteAutoCheck": true,
+  "localPeriodicCheck": true,
+  "items": {
+    "obsidian": {
+      "core-plugins": {
+        "synced": true
+      },
+      "community-plugins": {
+        "synced": true
+      },
+      "hotkeys": {
+        "synced": true
+      },
+      "app": {
+        "synced": true
+      },
+      "appearance": {
+        "synced": true
+      }
+    },
+    "core": {
+      "audio-recorder": {
+        "synced": true
+      },
+      "backlink": {
+        "synced": true
+      },
+      "bases": {
+        "synced": true
+      },
+      "bookmarks": {
+        "synced": true
+      },
+      "canvas": {
+        "synced": true
+      },
+      "command-palette": {
+        "synced": true
+      },
+      "daily-notes": {
+        "synced": true
+      },
+      "file-recovery": {
+        "synced": true
+      },
+      "file-explorer": {
+        "synced": true
+      },
+      "footnotes": {
+        "synced": true
+      },
+      "markdown-importer": {
+        "synced": true
+      },
+      "graph": {
+        "synced": true
+      },
+      "note-composer": {
+        "synced": true
+      },
+      "outgoing-link": {
+        "synced": true
+      },
+      "outline": {
+        "synced": true
+      },
+      "page-preview": {
+        "synced": true
+      },
+      "properties": {
+        "synced": true
+      },
+      "publish": {
+        "synced": true
+      },
+      "switcher": {
+        "synced": true
+      },
+      "random-note": {
+        "synced": true
+      },
+      "global-search": {
+        "synced": true
+      },
+      "editor-status": {
+        "synced": true
+      },
+      "slash-command": {
+        "synced": true
+      },
+      "slides": {
+        "synced": true
+      },
+      "sync": {
+        "synced": true
+      },
+      "tag-pane": {
+        "synced": true
+      },
+      "templates": {
+        "synced": true
+      },
+      "zk-prefixer": {
+        "synced": true
+      },
+      "webviewer": {
+        "synced": true
+      },
+      "word-count": {
+        "synced": true
+      },
+      "workspaces": {
+        "synced": true
+      }
+    },
+    "community": {
+      "auto-note-mover": {
+        "synced": true
+      },
+      "config-sync": {
+        "synced": true
+      },
+      "dataview": {
+        "synced": true
+      },
+      "obsidian-excalidraw-plugin": {
+        "synced": true
+      },
+      "excalidraw-stylus-menu": {
+        "synced": true
+      },
+      "obsidian-git": {
+        "synced": true
+      },
+      "obsidian-kanban": {
+        "synced": true
+      },
+      "obsidian-linter": {
+        "synced": true
+      },
+      "obsidian-pandoc": {
+        "synced": true
+      },
+      "url-into-selection": {
+        "synced": true
+      },
+      "darlal-switcher-plus": {
+        "synced": true
+      },
+      "short-internal-links-to-headings": {
+        "synced": true
+      },
+      "templater-obsidian": {
+        "synced": true
+      },
+      "various-complements": {
+        "synced": true
+      }
+    },
+    "custom": {}
+  },
+  "runHistory": {
+    "enabled": true,
+    "path": "",
+    "maxCount": 50,
+    "maxDays": 30
+  }
+}
