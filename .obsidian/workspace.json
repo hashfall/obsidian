@@ -16,6 +16,48 @@
               "icon": "arrow-left-right",
               "title": "Sync Center"
             }
+          },
+          {
+            "id": "9e1b2b1811a24266",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Quiz!Arena/Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Kanban"
+            }
+          },
+          {
+            "id": "28ae6e0cc817677a",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Quiz!Arena/Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Kanban"
+            }
           }
         ]
       }
@@ -95,6 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Quiz!Arena/Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Quiz!Arena/Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Quiz!Arena/Kanban.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -162,13 +207,35 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "051a2bcb4344f2bb",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Quiz!Arena/Kanban.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          },
+          {
+            "id": "bf3a4a6c7b854666",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,14 +247,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "templater-obsidian:Templater": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-git:Open Git source control": false,
       "config-sync:Config Sync": false
     }
   },
-  "active": "edd0e646256610ef",
-  "lastOpenFiles": []
+  "active": "28ae6e0cc817677a",
+  "lastOpenFiles": [
+    "Quiz!Arena/Fluxograma.canvas",
+    "Quiz!Arena/Kanban.md"
+  ]
 }
