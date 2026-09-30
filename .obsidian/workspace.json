@@ -8,37 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4572490a23ab8225",
-            "type": "leaf",
-            "state": {
-              "type": "config-sync-center",
-              "state": {},
-              "icon": "arrow-left-right",
-              "title": "Sync Center"
-            }
-          },
-          {
-            "id": "9e1b2b1811a24266",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Quiz!Arena/Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Kanban"
-            }
-          },
-          {
             "id": "28ae6e0cc817677a",
             "type": "leaf",
             "state": {
@@ -58,8 +27,26 @@
               "icon": "lucide-trello",
               "title": "Kanban"
             }
+          },
+          {
+            "id": "604fe5faf1290987",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Quiz!Arena/Fluxograma.canvas",
+                "viewState": {
+                  "x": 465.8400884331196,
+                  "y": -148.79097585977806,
+                  "zoom": -0.44266908974484787
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Fluxograma"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "98a2207cf297779d",
@@ -255,9 +243,11 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "28ae6e0cc817677a",
+  "active": "604fe5faf1290987",
   "lastOpenFiles": [
+    "Quiz!Arena/Kanban.md",
     "Quiz!Arena/Fluxograma.canvas",
-    "Quiz!Arena/Kanban.md"
+    "config-sync/store/configdir/plugins/obsidian-git/data.json",
+    "config-sync/store/configdir/plugins/obsidian-git"
   ]
 }

@@ -1,0 +1,3101 @@
+/*
+=====================================================
+
+NOIR VOID
+OBSIDIAN COMMUNITY THEME
+
+A quiet place worth returning to.
+
+Material identity:
+Deep void + layered graphite +
+smoked silver + rare old brass.
+
+Design philosophy:
+Dark enough to disappear.
+Detailed enough to explore.
+Comfortable enough to return to.
+
+=====================================================
+*/
+
+
+/*=====================================================
+01 — NOIR VOID TOKENS
+=====================================================*/
+
+:root {
+
+    /* Typography */
+
+    --noir-font-body:
+        "Inter",
+        "Noto Sans",
+        sans-serif;
+
+    --noir-font-heading:
+        "Cormorant Garamond",
+        "Georgia",
+        serif;
+
+    --noir-font-code:
+        "JetBrains Mono",
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+
+
+    /* Radius */
+
+    --noir-radius-xs:
+        4px;
+
+    --noir-radius-sm:
+        7px;
+
+    --noir-radius-md:
+        10px;
+
+    --noir-radius-lg:
+        14px;
+
+    --noir-radius-xl:
+        18px;
+
+
+    /* Spacing */
+
+    --noir-space-1:
+        4px;
+
+    --noir-space-2:
+        8px;
+
+    --noir-space-3:
+        12px;
+
+    --noir-space-4:
+        16px;
+
+    --noir-space-5:
+        20px;
+
+    --noir-space-6:
+        24px;
+
+    --noir-space-8:
+        32px;
+
+
+    /* Motion */
+
+    --noir-transition-fast:
+        120ms ease;
+
+    --noir-transition:
+        180ms ease;
+
+    --noir-transition-slow:
+        280ms ease;
+
+
+    /* Reading */
+
+    --noir-reading-width:
+        1000px;
+
+    --noir-reading-padding:
+        32px;
+
+
+    /* Shadows */
+
+    --noir-shadow-soft:
+        0 8px 28px
+        rgba(0, 0, 0, 0.16);
+
+    --noir-shadow-strong:
+        0 16px 44px
+        rgba(0, 0, 0, 0.28);
+
+}
+
+
+/*=====================================================
+02 — DARK MATERIAL
+
+PRIMARY NOIR VOID ENVIRONMENT
+
+=====================================================*/
+
+.theme-dark {
+
+    /* Void */
+
+    --noir-background:
+        #090A0C;
+
+    --noir-background-secondary:
+        #0E1013;
+
+    --noir-background-tertiary:
+        #141619;
+
+
+    /* Graphite surfaces */
+
+    --noir-surface:
+        #1A1D21;
+
+    --noir-surface-raised:
+        #202328;
+
+    --noir-surface-hover:
+        #25292E;
+
+    --noir-surface-active:
+        #2A2E33;
+
+
+    /* Borders */
+
+    --noir-border:
+        #343940;
+
+    --noir-border-soft:
+        #2A2E33;
+
+    --noir-border-strong:
+        #41464D;
+
+
+    /* Silver accent */
+
+    --noir-primary:
+        #8E969E;
+
+    --noir-primary-hover:
+        #A7AFB6;
+
+    --noir-primary-soft:
+        rgba(142, 150, 158, 0.10);
+
+    --noir-primary-muted:
+        #687078;
+
+
+    /* Old brass */
+
+    --noir-warm:
+        #A89470;
+
+    --noir-warm-hover:
+        #B9A57D;
+
+    --noir-warm-soft:
+        rgba(168, 148, 112, 0.10);
+
+
+    /* Text */
+
+    --noir-text:
+        #AEB4BA;
+
+    --noir-text-bright:
+        #D9D8D3;
+
+    --noir-text-muted:
+        #737A82;
+
+    --noir-text-faint:
+        #565C63;
+
+
+    /* Links */
+
+    --noir-link:
+        #9CA5AD;
+
+    --noir-link-hover:
+        #BBC1C6;
+
+    --noir-link-muted:
+        #697178;
+
+
+    /* Code */
+
+    --noir-code:
+        #B7BEC4;
+
+    --noir-code-surface:
+        #0E1013;
+
+
+    /* Highlight */
+
+    --noir-highlight:
+        rgba(168, 148, 112, 0.18);
+
+
+    /* States */
+
+    --noir-success:
+        #78927F;
+
+    --noir-warning:
+        #A89470;
+
+    --noir-danger:
+        #9A6868;
+
+    --noir-info:
+        #7F929F;
+
+
+    /* Interaction */
+
+    --noir-focus:
+        rgba(142, 150, 158, 0.16);
+
+    --noir-selection:
+        rgba(142, 150, 158, 0.20);
+
+
+    /* Atmosphere */
+
+    --noir-ambient:
+        rgba(142, 150, 158, 0.025);
+
+
+    /* Callouts */
+
+    --noir-callout-note:
+        #8E969E;
+
+    --noir-callout-note-bg:
+        rgba(142, 150, 158, 0.07);
+
+    --noir-callout-tip:
+        #78927F;
+
+    --noir-callout-tip-bg:
+        rgba(120, 146, 127, 0.07);
+
+    --noir-warning-bg:
+        rgba(168, 148, 112, 0.08);
+
+    --noir-danger-bg:
+        rgba(154, 104, 104, 0.08);
+
+    --noir-success-bg:
+        rgba(120, 146, 127, 0.08);
+
+
+    /* Limited glass */
+
+    --noir-glass:
+        rgba(26, 29, 33, 0.90);
+
+
+    /* Shadow */
+
+    --noir-shadow:
+        rgba(0, 0, 0, 0.30);
+
+    --noir-shadow-soft:
+        0 8px 28px
+        rgba(0, 0, 0, 0.18);
+
+}
+
+
+/*=====================================================
+03 — LIGHT MATERIAL
+
+NOIR VOID DAYLIGHT
+
+=====================================================*/
+
+.theme-light {
+
+    --noir-background:
+        #E9E6DE;
+
+    --noir-background-secondary:
+        #E1DED6;
+
+    --noir-background-tertiary:
+        #D9D6CE;
+
+
+    --noir-surface:
+        #F0EDE5;
+
+    --noir-surface-raised:
+        #F5F2EA;
+
+    --noir-surface-hover:
+        #E6E2D9;
+
+    --noir-surface-active:
+        #DCD8CF;
+
+
+    --noir-border:
+        #C7C3BA;
+
+    --noir-border-soft:
+        #D4D0C7;
+
+    --noir-border-strong:
+        #AEA9A0;
+
+
+    /* Silver accent */
+
+    --noir-primary:
+        #626A72;
+
+    --noir-primary-hover:
+        #4F575F;
+
+    --noir-primary-soft:
+        rgba(98, 106, 114, 0.09);
+
+    --noir-primary-muted:
+        #7D858C;
+
+
+    /* Warm accent */
+
+    --noir-warm:
+        #92784D;
+
+    --noir-warm-hover:
+        #7D653F;
+
+    --noir-warm-soft:
+        rgba(146, 120, 77, 0.10);
+
+
+    /* Text */
+
+    --noir-text:
+        #50545A;
+
+    --noir-text-bright:
+        #292A2B;
+
+    --noir-text-muted:
+        #777A7E;
+
+    --noir-text-faint:
+        #999B9D;
+
+
+    /* Links */
+
+    --noir-link:
+        #626A72;
+
+    --noir-link-hover:
+        #4F575F;
+
+    --noir-link-muted:
+        #7D858C;
+
+
+    /* Code */
+
+    --noir-code:
+        #555D64;
+
+    --noir-code-surface:
+        #E3DFD6;
+
+
+    /* Highlight */
+
+    --noir-highlight:
+        rgba(146, 120, 77, 0.18);
+
+
+    /* States */
+
+    --noir-success:
+        #587661;
+
+    --noir-warning:
+        #92784D;
+
+    --noir-danger:
+        #965E5E;
+
+    --noir-info:
+        #626F79;
+
+
+    --noir-focus:
+        rgba(98, 106, 114, 0.13);
+
+    --noir-selection:
+        rgba(98, 106, 114, 0.17);
+
+
+    --noir-ambient:
+        rgba(98, 106, 114, 0.018);
+
+
+    /* Callouts */
+
+    --noir-callout-note:
+        #626A72;
+
+    --noir-callout-note-bg:
+        rgba(98, 106, 114, 0.06);
+
+    --noir-callout-tip:
+        #587661;
+
+    --noir-callout-tip-bg:
+        rgba(88, 118, 97, 0.06);
+
+    --noir-warning-bg:
+        rgba(146, 120, 77, 0.07);
+
+    --noir-danger-bg:
+        rgba(150, 94, 94, 0.06);
+
+    --noir-success-bg:
+        rgba(88, 118, 97, 0.06);
+
+
+    --noir-glass:
+        rgba(245, 242, 234, 0.92);
+
+
+    --noir-shadow:
+        rgba(45, 42, 38, 0.14);
+
+    --noir-shadow-soft:
+        0 8px 28px
+        rgba(45, 42, 38, 0.10);
+
+}
+
+
+/*=====================================================
+04 — OBSIDIAN COMPATIBILITY
+=====================================================*/
+
+.theme-dark,
+.theme-light {
+
+    --background-primary:
+        var(--noir-background);
+
+    --background-primary-alt:
+        var(--noir-surface);
+
+    --background-secondary:
+        var(--noir-background-secondary);
+
+    --background-secondary-alt:
+        var(--noir-background-tertiary);
+
+
+    --background-modifier-border:
+        var(--noir-border);
+
+    --background-modifier-border-hover:
+        var(--noir-border-strong);
+
+    --background-modifier-hover:
+        var(--noir-primary-soft);
+
+    --background-modifier-active-hover:
+        var(--noir-primary-soft);
+
+
+    --text-normal:
+        var(--noir-text);
+
+    --text-muted:
+        var(--noir-text-muted);
+
+    --text-faint:
+        var(--noir-text-faint);
+
+    --text-error:
+        var(--noir-danger);
+
+
+    --text-accent:
+        var(--noir-primary);
+
+    --text-accent-hover:
+        var(--noir-primary-hover);
+
+    --interactive-accent:
+        var(--noir-primary);
+
+    --interactive-accent-hover:
+        var(--noir-primary-hover);
+
+    --interactive-hover:
+        var(--noir-primary-soft);
+
+
+    --divider-color:
+        var(--noir-border);
+
+    --divider-color-hover:
+        var(--noir-border-strong);
+
+
+    --text-selection:
+        var(--noir-selection);
+
+
+    --font-text:
+        var(--noir-font-body);
+
+    --font-interface:
+        var(--noir-font-body);
+
+    --font-monospace:
+        var(--noir-font-code);
+
+}
+
+
+/*=====================================================
+05 — BODY
+=====================================================*/
+
+body {
+
+    background:
+        var(--noir-background);
+
+    color:
+        var(--noir-text);
+
+    font-family:
+        var(--noir-font-body);
+
+    font-weight:
+        400;
+
+    -webkit-font-smoothing:
+        antialiased;
+
+}
+
+
+/*=====================================================
+06 — GLOBAL TYPOGRAPHY
+=====================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family:
+        var(--noir-font-heading);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+07 — WORKSPACE
+=====================================================*/
+
+.workspace,
+.workspace-split,
+.workspace-tabs,
+.workspace-tab-container {
+
+    background:
+        var(--noir-background);
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.workspace-leaf {
+
+    background:
+        var(--noir-surface);
+
+    border-color:
+        var(--noir-border);
+
+}
+
+
+.workspace-leaf-content {
+
+    background:
+        var(--noir-background);
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.workspace-empty {
+
+    background:
+        var(--noir-background);
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+08 — SIDE DOCKS
+=====================================================*/
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+
+    background:
+        var(--noir-background-secondary);
+
+}
+
+
+.workspace-split.mod-left-split {
+
+    border-right:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.workspace-split.mod-right-split {
+
+    border-left:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+/*=====================================================
+09 — FILE EXPLORER
+=====================================================*/
+
+.nav-files-container {
+
+    padding:
+        var(--noir-space-3);
+
+}
+
+
+.nav-folder-title,
+.nav-file-title {
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+    transition:
+        background var(--noir-transition),
+        color var(--noir-transition);
+
+}
+
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.nav-folder-title-content {
+
+    font-weight:
+        600;
+
+}
+
+
+.nav-folder-collapse-indicator {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.nav-file-title.is-active {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+    box-shadow:
+        inset 2px 0 0
+        var(--noir-primary);
+
+}
+
+
+.nav-file-title.is-active
+.nav-file-title-content {
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+10 — SEARCH
+=====================================================*/
+
+.search-input-container {
+
+    background:
+        var(--noir-background);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.search-input-container input {
+
+    background:
+        transparent;
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.search-input-container input::placeholder {
+
+    color:
+        var(--noir-text-faint);
+
+}
+
+
+.search-input-container:focus-within {
+
+    border-color:
+        var(--noir-primary);
+
+    box-shadow:
+        0 0 0 2px
+        var(--noir-focus);
+
+}
+
+
+/*=====================================================
+11 — TABS
+=====================================================*/
+
+.workspace-tab-header-container {
+
+    background:
+        var(--noir-background-secondary);
+
+    border-bottom:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.workspace-tab-header {
+
+    color:
+        var(--noir-text-muted);
+
+    border:
+        none;
+
+    border-radius:
+        var(--noir-radius-sm)
+        var(--noir-radius-sm)
+        0
+        0;
+
+    transition:
+        background var(--noir-transition),
+        color var(--noir-transition);
+
+}
+
+
+.workspace-tab-header:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.workspace-tab-header.is-active {
+
+    background:
+        var(--noir-surface);
+
+    color:
+        var(--noir-text-bright);
+
+    box-shadow:
+        inset 0 -1px 0
+        var(--noir-primary);
+
+}
+
+
+.workspace-tab-header-inner {
+
+    padding:
+        0 var(--noir-space-2);
+
+}
+
+
+.workspace-tab-header-inner-title {
+
+    color:
+        inherit;
+
+}
+
+
+.workspace-tab-header-inner-close-button {
+
+    color:
+        var(--noir-text-muted);
+
+    border-radius:
+        var(--noir-radius-xs);
+
+}
+
+
+.workspace-tab-header-inner-close-button:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+12 — RIBBON
+=====================================================*/
+
+.workspace-ribbon {
+
+    background:
+        var(--noir-background-secondary);
+
+    border-right:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.side-dock-ribbon-action {
+
+    color:
+        var(--noir-text-muted);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+    transition:
+        color var(--noir-transition),
+        background var(--noir-transition);
+
+}
+
+
+.side-dock-ribbon-action:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+.side-dock-ribbon-action.is-active {
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+/*=====================================================
+13 — VIEW HEADERS
+=====================================================*/
+
+.view-header,
+.workspace-leaf-header {
+
+    background:
+        var(--noir-background-secondary);
+
+    border-bottom:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.view-header-title,
+.workspace-leaf-header-title {
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.view-actions {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.view-action,
+.clickable-icon {
+
+    color:
+        var(--noir-text-muted);
+
+    border-radius:
+        var(--noir-radius-xs);
+
+    transition:
+        color var(--noir-transition),
+        background var(--noir-transition);
+
+}
+
+
+.view-action:hover,
+.clickable-icon:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+14 — STATUS BAR
+=====================================================*/
+
+.status-bar {
+
+    background:
+        var(--noir-background-secondary);
+
+    border-top:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.status-bar-item {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.status-bar-item:hover {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+/*=====================================================
+15 — RESIZE HANDLES
+=====================================================*/
+
+.workspace-leaf-resize-handle {
+
+    background:
+        transparent;
+
+}
+
+
+.workspace-leaf-resize-handle:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+}
+
+
+/*=====================================================
+16 — TREE ITEMS
+=====================================================*/
+
+.tree-item-self {
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.tree-item-self:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.tree-item-self.is-active {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.tree-item-icon {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+17 — OUTLINE
+=====================================================*/
+
+.outline .tree-item-self {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.outline .tree-item-self:hover {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.outline .tree-item-self.is-active {
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+/*=====================================================
+18 — TAGS
+=====================================================*/
+
+.tag {
+
+    display:
+        inline-block;
+
+    background:
+        var(--noir-primary-soft);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        999px;
+
+    color:
+        var(--noir-text-muted);
+
+    padding:
+        2px 8px;
+
+    font-size:
+        .88em;
+
+    transition:
+        background var(--noir-transition),
+        border-color var(--noir-transition),
+        color var(--noir-transition);
+
+}
+
+
+.tag:hover {
+
+    background:
+        var(--noir-surface-hover);
+
+    border-color:
+        var(--noir-primary-muted);
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+/*=====================================================
+19 — EDITOR FOUNDATION
+=====================================================*/
+
+.markdown-preview-view,
+.markdown-source-view,
+.cm-editor {
+
+    font-family:
+        var(--noir-font-body);
+
+    font-size:
+        17px;
+
+    line-height:
+        1.75;
+
+    letter-spacing:
+        .005em;
+
+    color:
+        var(--noir-text);
+
+    background:
+        var(--noir-background);
+
+}
+
+
+/*=====================================================
+20 — READING MODE
+=====================================================*/
+
+.markdown-preview-view {
+
+    padding-left:
+        clamp(20px, 5vw, 70px);
+
+    padding-right:
+        clamp(20px, 5vw, 70px);
+
+}
+
+
+.markdown-preview-view .markdown-preview-section {
+
+    max-width:
+        var(--noir-reading-width);
+
+    margin:
+        0 auto;
+
+    text-rendering:
+        optimizeLegibility;
+
+}
+
+
+/*=====================================================
+21 — SOURCE MODE
+=====================================================*/
+
+.markdown-source-view .cm-scroller {
+
+    padding-left:
+        clamp(20px, 4vw, 55px);
+
+    padding-right:
+        clamp(20px, 4vw, 55px);
+
+}
+
+
+.cm-content {
+
+    caret-color:
+        var(--noir-primary);
+
+}
+
+
+.cm-cursor {
+
+    border-left-color:
+        var(--noir-primary);
+
+}
+
+
+.cm-activeLine {
+
+    background:
+        var(--noir-surface-hover);
+
+}
+
+
+.cm-line.cm-activeLine {
+
+    background:
+        var(--noir-surface-hover);
+
+}
+
+
+/*=====================================================
+22 — EDITOR GUTTER
+=====================================================*/
+
+.cm-gutters {
+
+    background:
+        var(--noir-background);
+
+    border-right:
+        none;
+
+    color:
+        var(--noir-text-faint);
+
+}
+
+
+.cm-activeLineGutter {
+
+    background:
+        var(--noir-surface-hover);
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+23 — BODY TEXT
+=====================================================*/
+
+.markdown-preview-view p {
+
+    color:
+        var(--noir-text);
+
+    margin-top:
+        0;
+
+    margin-bottom:
+        1.15em;
+
+}
+
+
+.markdown-preview-view strong {
+
+    color:
+        var(--noir-text-bright);
+
+    font-weight:
+        700;
+
+}
+
+
+.markdown-preview-view em {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+/*=====================================================
+24 — HEADINGS
+=====================================================*/
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+
+    font-family:
+        var(--noir-font-heading);
+
+    color:
+        var(--noir-text-bright);
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        -.01em;
+
+}
+
+
+.markdown-preview-view h1 {
+
+    font-size:
+        2.45em;
+
+    line-height:
+        1.15;
+
+    margin-top:
+        1.4em;
+
+    margin-bottom:
+        .65em;
+
+}
+
+
+.markdown-preview-view h2 {
+
+    font-size:
+        1.85em;
+
+    line-height:
+        1.25;
+
+    margin-top:
+        1.35em;
+
+    margin-bottom:
+        .55em;
+
+}
+
+
+.markdown-preview-view h3 {
+
+    font-size:
+        1.45em;
+
+    line-height:
+        1.3;
+
+    margin-top:
+        1.25em;
+
+    margin-bottom:
+        .45em;
+
+}
+
+
+.markdown-preview-view h4 {
+
+    font-size:
+        1.2em;
+
+}
+
+
+.markdown-preview-view h5 {
+
+    font-size:
+        1.05em;
+
+}
+
+
+.markdown-preview-view h6 {
+
+    font-size:
+        .95em;
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+
+    font-family:
+        var(--noir-font-heading);
+
+}
+
+
+/*=====================================================
+25 — LINKS
+=====================================================*/
+
+.markdown-preview-view a,
+.markdown-preview-view .internal-link {
+
+    color:
+        var(--noir-link);
+
+    text-decoration:
+        none;
+
+    transition:
+        color var(--noir-transition);
+
+}
+
+
+.markdown-preview-view a:hover,
+.markdown-preview-view .internal-link:hover {
+
+    color:
+        var(--noir-link-hover);
+
+}
+
+
+.markdown-preview-view .is-unresolved {
+
+    color:
+        var(--noir-link-muted);
+
+}
+
+
+.external-link {
+
+    color:
+        var(--noir-link);
+
+}
+
+
+/*=====================================================
+26 — LISTS
+=====================================================*/
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+
+    margin-top:
+        .4em;
+
+    margin-bottom:
+        1em;
+
+    padding-left:
+        1.8em;
+
+}
+
+
+.markdown-preview-view li {
+
+    margin-bottom:
+        .35em;
+
+}
+
+
+.markdown-preview-view li > ul,
+.markdown-preview-view li > ol {
+
+    margin-top:
+        .25em;
+
+    margin-bottom:
+        .25em;
+
+}
+
+
+.markdown-preview-view li::marker {
+
+    color:
+        var(--noir-primary-muted);
+
+}
+
+
+/*=====================================================
+27 — CHECKBOXES
+=====================================================*/
+
+.markdown-preview-view input[type="checkbox"] {
+
+    accent-color:
+        var(--noir-primary);
+
+}
+
+
+.markdown-preview-view li.task-list-item.is-checked {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+28 — BLOCKQUOTES
+=====================================================*/
+
+.markdown-preview-view blockquote {
+
+    margin:
+        1.4em 0;
+
+    padding:
+        .8em 1.2em;
+
+    background:
+        var(--noir-surface);
+
+    border-left:
+        3px solid
+        var(--noir-primary-muted);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.markdown-preview-view blockquote p {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+29 — HIGHLIGHTS
+=====================================================*/
+
+.markdown-preview-view mark {
+
+    background:
+        var(--noir-highlight);
+
+    color:
+        var(--noir-text-bright);
+
+    padding:
+        1px 4px;
+
+    border-radius:
+        4px;
+
+}
+
+
+/*=====================================================
+30 — INLINE CODE
+=====================================================*/
+
+.markdown-preview-view code {
+
+    font-family:
+        var(--noir-font-code);
+
+    font-size:
+        .9em;
+
+    background:
+        var(--noir-code-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-code);
+
+    padding:
+        2px 6px;
+
+    border-radius:
+        5px;
+
+}
+
+
+/*=====================================================
+31 — CODE BLOCKS
+=====================================================*/
+
+.markdown-preview-view pre {
+
+    font-family:
+        var(--noir-font-code);
+
+    background:
+        var(--noir-code-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+    padding:
+        18px 20px;
+
+    overflow:
+        auto;
+
+}
+
+
+.markdown-preview-view pre code {
+
+    background:
+        transparent;
+
+    border:
+        none;
+
+    padding:
+        0;
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.cm-s-obsidian .HyperMD-codeblock {
+
+    font-family:
+        var(--noir-font-code);
+
+    background:
+        var(--noir-code-surface);
+
+}
+
+
+/*=====================================================
+32 — HORIZONTAL RULE
+=====================================================*/
+
+.markdown-preview-view hr {
+
+    border:
+        none;
+
+    border-top:
+        1px solid
+        var(--noir-border);
+
+    margin:
+        2.5em 0;
+
+}
+
+
+/*=====================================================
+33 — IMAGES
+=====================================================*/
+
+.markdown-preview-view img {
+
+    max-width:
+        100%;
+
+    height:
+        auto;
+
+    border-radius:
+        var(--noir-radius-md);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.markdown-preview-view img:hover {
+
+    border-color:
+        var(--noir-border-strong);
+
+}
+
+
+/*=====================================================
+34 — TABLES
+
+ONE CONTINUOUS MATERIAL SURFACE
+
+No zebra striping.
+No white spreadsheet header.
+No floating-card effect.
+
+=====================================================*/
+
+.markdown-preview-view table,
+.table-view-table {
+
+    width:
+        100%;
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+    overflow:
+        hidden;
+
+}
+
+
+.markdown-preview-view th,
+.markdown-preview-view td,
+.table-view-table th,
+.table-view-table td {
+
+    background:
+        var(--noir-surface);
+
+    color:
+        var(--noir-text);
+
+    padding:
+        10px 13px;
+
+    border-color:
+        var(--noir-border);
+
+}
+
+
+.markdown-preview-view thead th,
+.table-view-table thead th {
+
+    background:
+        var(--noir-surface);
+
+    color:
+        var(--noir-text-bright);
+
+    font-weight:
+        600;
+
+}
+
+
+.markdown-preview-view tbody tr:nth-child(even) td,
+.markdown-preview-view tbody tr:nth-child(odd) td,
+.table-view-table tbody tr:nth-child(even) td,
+.table-view-table tbody tr:nth-child(odd) td {
+
+    background:
+        var(--noir-surface);
+
+}
+
+
+.markdown-preview-view tbody tr:hover td,
+.table-view-table tbody tr:hover td {
+
+    background:
+        var(--noir-surface-hover);
+
+}
+
+
+/*=====================================================
+35 — CALLOUTS
+=====================================================*/
+
+.callout {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+    box-shadow:
+        none;
+
+}
+
+
+.callout-title {
+
+    color:
+        var(--noir-text-bright);
+
+    font-weight:
+        600;
+
+}
+
+
+.callout-content {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.callout[data-callout="note"] {
+
+    --callout-color:
+        var(--noir-callout-note);
+
+    background:
+        var(--noir-callout-note-bg);
+
+}
+
+
+.callout[data-callout="tip"] {
+
+    --callout-color:
+        var(--noir-callout-tip);
+
+    background:
+        var(--noir-callout-tip-bg);
+
+}
+
+
+.callout[data-callout="warning"] {
+
+    --callout-color:
+        var(--noir-warning);
+
+    background:
+        var(--noir-warning-bg);
+
+}
+
+
+.callout[data-callout="danger"] {
+
+    --callout-color:
+        var(--noir-danger);
+
+    background:
+        var(--noir-danger-bg);
+
+}
+
+
+.callout[data-callout="success"] {
+
+    --callout-color:
+        var(--noir-success);
+
+    background:
+        var(--noir-success-bg);
+
+}
+
+
+.callout[data-callout="abstract"],
+.callout[data-callout="idea"] {
+
+    --callout-color:
+        var(--noir-primary);
+
+    background:
+        var(--noir-primary-soft);
+
+}
+
+
+.callout[data-callout="quote"] {
+
+    --callout-color:
+        var(--noir-text-muted);
+
+    background:
+        var(--noir-surface);
+
+}
+
+
+/*=====================================================
+36 — METADATA / PROPERTIES
+=====================================================*/
+
+.metadata-container {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+}
+
+
+.metadata-property {
+
+    border-bottom:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.metadata-property:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+
+.metadata-property-key {
+
+    color:
+        var(--noir-text-muted);
+
+    font-weight:
+        500;
+
+}
+
+
+.metadata-property-value,
+.metadata-input-longtext {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.metadata-property:hover {
+
+    background:
+        var(--noir-surface-hover);
+
+}
+
+
+/*=====================================================
+37 — EMBEDS
+=====================================================*/
+
+.markdown-embed,
+.internal-embed {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+}
+
+
+.markdown-embed-title {
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.markdown-embed-link {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.markdown-embed-link:hover {
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+/*=====================================================
+38 — TASKS
+=====================================================*/
+
+.task-list-item-checkbox {
+
+    accent-color:
+        var(--noir-primary);
+
+}
+
+
+.task-list-item {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.task-list-item[data-task="x"],
+.task-list-item[data-task="X"],
+.task-list-item.is-checked {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.task-list-item-checkbox:focus-visible {
+
+    outline:
+        2px solid
+        var(--noir-primary);
+
+    outline-offset:
+        2px;
+
+}
+
+
+/*=====================================================
+39 — SEARCH RESULTS
+=====================================================*/
+
+.search-result {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.search-result-file-title {
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.search-result-file-matched-text {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+.search-result-file-title:hover {
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+.nav-files-container
+.search-result-file-matched-text {
+
+    color:
+        var(--noir-warm);
+
+}
+
+
+/*=====================================================
+40 — BOOKMARKS
+=====================================================*/
+
+.bookmark {
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.bookmark:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+}
+
+
+/*=====================================================
+41 — TAG PANE
+=====================================================*/
+
+.tag-pane-tag {
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.tag-pane-tag:hover {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-primary);
+
+}
+
+
+/*=====================================================
+42 — DATAVIEW
+=====================================================*/
+
+.dataview {
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.dataview.table-view-table {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+.dataview th,
+.dataview td {
+
+    background:
+        var(--noir-surface);
+
+    color:
+        var(--noir-text);
+
+    border-color:
+        var(--noir-border);
+
+}
+
+
+.dataview th {
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.dataview tbody tr:nth-child(even) td,
+.dataview tbody tr:nth-child(odd) td {
+
+    background:
+        var(--noir-surface);
+
+}
+
+
+.dataview tbody tr:hover td {
+
+    background:
+        var(--noir-surface-hover);
+
+}
+
+
+.dataview .card {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+    padding:
+        14px;
+
+}
+
+
+.dataview .card:hover {
+
+    background:
+        var(--noir-surface-hover);
+
+    border-color:
+        var(--noir-border-strong);
+
+}
+
+
+/*=====================================================
+43 — MODALS
+=====================================================*/
+
+.modal {
+
+    background:
+        var(--noir-surface-raised);
+
+    border:
+        1px solid
+        var(--noir-border-strong);
+
+    border-radius:
+        var(--noir-radius-lg);
+
+    box-shadow:
+        var(--noir-shadow-strong);
+
+}
+
+
+/*=====================================================
+44 — MENUS
+=====================================================*/
+
+.menu {
+
+    background:
+        var(--noir-surface-raised);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    border-radius:
+        var(--noir-radius-md);
+
+    box-shadow:
+        var(--noir-shadow-soft);
+
+}
+
+
+.menu-item {
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.menu-item:hover {
+
+    background:
+        var(--noir-surface-hover);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+45 — COMMAND PALETTE
+=====================================================*/
+
+.prompt {
+
+    background:
+        var(--noir-surface-raised);
+
+    border:
+        1px solid
+        var(--noir-border-strong);
+
+    border-radius:
+        var(--noir-radius-lg);
+
+}
+
+
+.prompt-input {
+
+    background:
+        var(--noir-background);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-text);
+
+}
+
+
+.suggestion-item {
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+.suggestion-item.is-selected {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+/*=====================================================
+46 — BUTTONS
+=====================================================*/
+
+button {
+
+    background:
+        var(--noir-surface);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+    transition:
+        background var(--noir-transition),
+        border-color var(--noir-transition),
+        color var(--noir-transition);
+
+}
+
+
+button:hover {
+
+    background:
+        var(--noir-surface-hover);
+
+    border-color:
+        var(--noir-border-strong);
+
+}
+
+
+button.mod-cta {
+
+    background:
+        var(--noir-primary);
+
+    border-color:
+        var(--noir-primary);
+
+    color:
+        #090A0C;
+
+}
+
+
+button.mod-cta:hover {
+
+    background:
+        var(--noir-primary-hover);
+
+    border-color:
+        var(--noir-primary-hover);
+
+}
+
+
+/*=====================================================
+47 — INPUTS
+=====================================================*/
+
+input,
+textarea,
+select {
+
+    background:
+        var(--noir-background);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-text);
+
+    border-radius:
+        var(--noir-radius-sm);
+
+}
+
+
+input::placeholder,
+textarea::placeholder {
+
+    color:
+        var(--noir-text-faint);
+
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    border-color:
+        var(--noir-primary);
+
+    box-shadow:
+        0 0 0 2px
+        var(--noir-focus);
+
+}
+
+
+/*=====================================================
+48 — TOOLTIP
+=====================================================*/
+
+.tooltip {
+
+    background:
+        var(--noir-surface-raised);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    color:
+        var(--noir-text);
+
+    box-shadow:
+        var(--noir-shadow-soft);
+
+}
+
+
+/*=====================================================
+49 — FOCUS
+=====================================================*/
+
+:focus-visible {
+
+    outline:
+        2px solid
+        var(--noir-primary);
+
+    outline-offset:
+        2px;
+
+}
+
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+
+    outline:
+        2px solid
+        var(--noir-primary);
+
+    outline-offset:
+        2px;
+
+}
+
+
+/*=====================================================
+50 — SELECTION
+=====================================================*/
+
+::selection {
+
+    background:
+        var(--noir-selection);
+
+    color:
+        var(--noir-text-bright);
+
+}
+
+
+.cm-selectionBackground {
+
+    background:
+        var(--noir-selection);
+
+}
+
+
+/*=====================================================
+51 — SCROLLBARS
+
+Chromium / Electron compatible.
+
+No scrollbar-width.
+No scrollbar-color.
+
+=====================================================*/
+
+::-webkit-scrollbar {
+
+    width:
+        8px;
+
+    height:
+        8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:
+        var(--noir-background);
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        var(--noir-border);
+
+    border-radius:
+        20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        var(--noir-border-strong);
+
+}
+
+
+/*=====================================================
+52 — QUIET ATMOSPHERE
+
+Extremely restrained.
+
+The atmosphere should be felt,
+not noticed.
+
+=====================================================*/
+
+.workspace {
+
+    position:
+        relative;
+
+}
+
+
+.workspace::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    pointer-events:
+        none;
+
+    background:
+        radial-gradient(
+            circle at 15% 0%,
+            var(--noir-ambient),
+            transparent 38%
+        );
+
+    opacity:
+        .35;
+
+}
+
+
+.theme-light .workspace::before {
+
+    opacity:
+        .14;
+
+}
+
+
+/*=====================================================
+53 — LIMITED GLASS
+
+Only explicitly marked elements.
+
+Never applied globally.
+
+=====================================================*/
+
+.noir-glass {
+
+    background:
+        var(--noir-glass);
+
+    border:
+        1px solid
+        var(--noir-border);
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+/*=====================================================
+54 — RARE WARM MEMORY
+
+Old brass is intentionally scarce.
+
+=====================================================*/
+
+.noir-warm {
+
+    color:
+        var(--noir-warm);
+
+}
+
+
+.noir-warm-surface {
+
+    background:
+        var(--noir-warm-soft);
+
+    border-color:
+        var(--noir-warm);
+
+}
+
+
+/*=====================================================
+55 — DRAG STATES
+=====================================================*/
+
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged {
+
+    background:
+        var(--noir-primary-soft);
+
+    color:
+        var(--noir-text-bright);
+
+    border:
+        1px solid
+        var(--noir-primary-muted);
+
+}
+
+
+.is-being-dragged {
+
+    opacity:
+        .75;
+
+}
+
+
+/*=====================================================
+56 — EMPTY STATES
+=====================================================*/
+
+.nav-files-container .nav-empty-message,
+.view-content .nav-empty-message {
+
+    color:
+        var(--noir-text-muted);
+
+}
+
+
+/*=====================================================
+57 — FOOTNOTES
+=====================================================*/
+
+.footnote-ref {
+
+    color:
+        var(--noir-link);
+
+}
+
+
+.footnotes {
+
+    color:
+        var(--noir-text-muted);
+
+    border-top:
+        1px solid
+        var(--noir-border);
+
+}
+
+
+/*=====================================================
+58 — SPELLCHECK
+=====================================================*/
+
+.cm-invalidchar {
+
+    color:
+        var(--noir-warning);
+
+}
+
+
+/*=====================================================
+59 — MOBILE
+=====================================================*/
+
+@media (max-width: 700px) {
+
+    .nav-files-container {
+
+        padding:
+            var(--noir-space-2);
+
+    }
+
+
+    .workspace-split.mod-left-split,
+    .workspace-split.mod-right-split {
+
+        border:
+            none;
+
+    }
+
+
+    .workspace-ribbon {
+
+        border:
+            none;
+
+    }
+
+
+    .workspace-tab-header {
+
+        padding-left:
+            var(--noir-space-1);
+
+        padding-right:
+            var(--noir-space-1);
+
+    }
+
+
+    .workspace-tab-header-inner {
+
+        padding:
+            0 var(--noir-space-1);
+
+    }
+
+
+    .status-bar {
+
+        font-size:
+            12px;
+
+    }
+
+
+    .markdown-preview-view,
+    .markdown-source-view,
+    .cm-editor {
+
+        font-size:
+            16px;
+
+        line-height:
+            1.7;
+
+    }
+
+
+    .markdown-preview-view {
+
+        padding-left:
+            16px;
+
+        padding-right:
+            16px;
+
+    }
+
+
+    .markdown-source-view .cm-scroller {
+
+        padding-left:
+            14px;
+
+        padding-right:
+            14px;
+
+    }
+
+
+    .markdown-preview-view h1 {
+
+        font-size:
+            2em;
+
+    }
+
+
+    .markdown-preview-view h2 {
+
+        font-size:
+            1.6em;
+
+    }
+
+
+    .markdown-preview-view blockquote {
+
+        padding:
+            .7em 1em;
+
+    }
+
+
+    .markdown-preview-view pre {
+
+        padding:
+            14px;
+
+    }
+
+
+    .callout {
+
+        border-radius:
+            var(--noir-radius-sm);
+
+    }
+
+
+    .metadata-container {
+
+        border-radius:
+            var(--noir-radius-sm);
+
+    }
+
+
+    .tag {
+
+        padding:
+            2px 7px;
+
+    }
+
+
+    .modal,
+    .menu,
+    .prompt {
+
+        border-radius:
+            var(--noir-radius-md);
+
+        box-shadow:
+            var(--noir-shadow-soft);
+
+    }
+
+
+    .workspace::before {
+
+        opacity:
+            .08;
+
+    }
+
+
+    .noir-glass {
+
+        backdrop-filter:
+            none;
+
+    }
+
+}
+
+
+/*=====================================================
+60 — REDUCED MOTION
+
+
+=====================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms;
+
+        animation-iteration-count:
+            1;
+
+        transition-duration:
+            0.01ms;
+
+        scroll-behavior:
+            auto;
+
+    }
+
+}
+
+
+/*=====================================================
+
+NOIR VOID
+
+=====================================================*/

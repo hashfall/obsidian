@@ -1,5 +1,67 @@
 [
   {
+    "at": 1790779117299,
+    "kind": "capture",
+    "remote": null,
+    "status": "ok",
+    "changed": 3,
+    "issues": 0,
+    "desc": "3 items captured",
+    "results": [
+      {
+        "group": "appearance",
+        "status": "ok",
+        "filesWritten": [
+          "config-sync/store/configdir/appearance.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [
+            "appearance.json"
+          ],
+          "deleted": []
+        }
+      },
+      {
+        "group": "community-plugins",
+        "status": "ok",
+        "filesWritten": [
+          "config-sync/store/configdir/community-plugins.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [],
+          "updated": [
+            "community-plugins.json"
+          ],
+          "deleted": []
+        }
+      },
+      {
+        "group": "plugin-obsidian-git",
+        "status": "ok",
+        "filesWritten": [
+          "config-sync/store/configdir/plugins/obsidian-git/data.json"
+        ],
+        "filesDeleted": [],
+        "messages": [],
+        "needsAppReload": false,
+        "changes": {
+          "added": [
+            "data.json"
+          ],
+          "updated": [],
+          "deleted": []
+        }
+      }
+    ]
+  },
+  {
     "at": 1790775900044,
     "kind": "apply",
     "remote": null,

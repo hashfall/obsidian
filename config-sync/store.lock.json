@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-09-30T13:30:01.858Z",
+  "capturedAt": "2026-09-30T14:38:37.297Z",
   "items": {
     "obsidian": {
       "app": {
@@ -15,8 +15,8 @@
           "kind": "app",
           "version": "1.13.7"
         },
-        "capturedAt": "2026-09-30T13:29:32.800Z",
-        "hash": "sha256:b8a4120408a76e335316de9a0c139291da653eaffab9cb1406bccf615a0ff495"
+        "capturedAt": "2026-09-30T14:38:37.288Z",
+        "hash": "sha256:b645f9f1c5cb7ce3a00af9e1890bb4346d1d671993537d1ef2d26832c47a2e71"
       },
       "core-plugins": {
         "source": {
@@ -36,14 +36,15 @@
           "kind": "app",
           "version": "1.13.7"
         },
+        "capturedAt": "2026-09-30T14:38:37.290Z",
+        "hash": "sha256:f1f6b0675d0c10eb6beb285ca27defea6d594c9ebc1ed99387df195f3b1f1355",
         "display": {
           "elements": {
             "obsidian-linter": "Linter",
-            "obsidian-excalidraw-plugin": "Excalidraw"
+            "obsidian-excalidraw-plugin": "Excalidraw",
+            "obsidian-git": "Git"
           }
-        },
-        "capturedAt": "2026-09-30T13:29:32.823Z",
-        "hash": "sha256:c5950e2ca1a71dc4107be0ee80ed434e6f33cb3b596554a5a0d7ae549c01632e"
+        }
       }
     },
     "core": {
@@ -81,6 +82,17 @@
         },
         "capturedAt": "2026-09-30T13:29:32.846Z",
         "hash": "sha256:6efda7d8c47c6bc2d7e19aa14e598cfc1de5c6aedc3642820ee99d5e5562f5bc"
+      },
+      "obsidian-git": {
+        "source": {
+          "kind": "plugin",
+          "version": "2.40.0"
+        },
+        "display": {
+          "label": "Git"
+        },
+        "capturedAt": "2026-09-30T14:38:37.297Z",
+        "hash": "sha256:6277be4b5da30c3cc9b5564884c910474c6c067c605bdb1e0d1a7de402c32c0d"
       },
       "obsidian-linter": {
         "source": {
