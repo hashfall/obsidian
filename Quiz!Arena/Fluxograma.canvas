@@ -22,14 +22,14 @@
 		{"id":"903a355eab8353fd","type":"text","text":"Cálculo de Peso das Alternativas e update dos pesos no firebase (checar detalhes no fluxograma do Firebase)","x":1140,"y":420,"width":250,"height":165},
 		{"id":"5316652ac6e06282","type":"text","text":"Ranking:\nCálcular o ranking dos players com base no peso das alternativas e salvar no firebase","x":1140,"y":620,"width":250,"height":175},
 		{"id":"d2f2ff86fa08f4fe","type":"text","text":"Executa às 00h00 através de um cron job","x":1140,"y":300,"width":250,"height":95},
-		{"id":"514f85913628d18a","type":"text","text":"API endpoint","x":440,"y":590,"width":250,"height":60},
-		{"id":"f9c91f725932c6ea","type":"text","text":"Pesquisar nickname","x":845,"y":695,"width":250,"height":60},
-		{"id":"e31fabcd1bb883ea","type":"text","text":"Buscar questões do dia (7 questões)","x":845,"y":590,"width":250,"height":60},
-		{"id":"7172683af0baf32c","type":"text","text":"Salvar respostas","x":840,"y":480,"width":250,"height":60},
 		{"id":"898067eba0debc2e","type":"text","text":"Sortear 7 novas questões dentre as disciplinas, sem repetir a mesma disciplia (desmarnar [false] as questões anteriormente sorteadas)","x":1140,"y":820,"width":250,"height":200},
 		{"id":"b46a76786b5acf91","type":"text","text":"Entrada do Nickname do player e Senha","x":-600,"y":612,"width":250,"height":75},
 		{"id":"3612de6f4b5af496","type":"text","text":"Ranking global sempre é exibido na lateral e possuí um campo de pesquisa de nickname para o player conseguir encontrar o seu ranking","x":-240,"y":687,"width":250,"height":190},
-		{"id":"831207e0440c925f","type":"text","text":"Exibir uma questão por vez e enviar a resposta do player para a API do backend (total de questões do dia é 7)","x":-240,"y":467,"width":250,"height":183}
+		{"id":"831207e0440c925f","type":"text","text":"Exibir uma questão por vez e enviar a resposta do player para a API do backend (total de questões do dia é 7)","x":-240,"y":467,"width":250,"height":183},
+		{"id":"514f85913628d18a","type":"text","text":"**API endpoint**","x":440,"y":620,"width":250,"height":60},
+		{"id":"f9c91f725932c6ea","type":"text","text":"Pesquisar nickname","x":845,"y":735,"width":250,"height":60},
+		{"id":"e31fabcd1bb883ea","type":"text","text":"Buscar questões do dia (7 questões)","x":845,"y":620,"width":250,"height":60},
+		{"id":"7172683af0baf32c","type":"text","text":"Salvar respostas","x":840,"y":503,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"3359f91f1e460273","fromNode":"a3c3d4a4cb2177f3","fromSide":"bottom","toNode":"f4794da69866274b","toSide":"top"},

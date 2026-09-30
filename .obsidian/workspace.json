@@ -36,9 +36,9 @@
               "state": {
                 "file": "Quiz!Arena/Fluxograma.canvas",
                 "viewState": {
-                  "x": 426.99908817038926,
-                  "y": -45.58837825080934,
-                  "zoom": -0.44266908974484787
+                  "x": 395.81765280765086,
+                  "y": 36.304319252043854,
+                  "zoom": -0.4921377660091477
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -223,8 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,8 +245,10 @@
   },
   "active": "604fe5faf1290987",
   "lastOpenFiles": [
-    "Quiz!Arena/Kanban.md",
+    "Quiz!Arena/Excalidraw/Brainstorm.md",
+    "Quiz!Arena/Excalidraw",
     "Quiz!Arena/Fluxograma.canvas",
+    "Quiz!Arena/Kanban.md",
     "config-sync/store/configdir/plugins/obsidian-git/data.json",
     "config-sync/store/configdir/plugins/obsidian-git"
   ]
