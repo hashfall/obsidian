@@ -36,8 +36,8 @@
               "state": {
                 "file": "Quiz!Arena/Fluxograma.canvas",
                 "viewState": {
-                  "x": 465.8400884331196,
-                  "y": -148.79097585977806,
+                  "x": 426.99908817038926,
+                  "y": -45.58837825080934,
                   "zoom": -0.44266908974484787
                 }
               },
@@ -223,7 +223,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
