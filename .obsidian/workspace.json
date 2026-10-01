@@ -4,46 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "cc5cc54bbd7733f5",
+        "id": "91843b76b84ced1e",
         "type": "tabs",
         "children": [
           {
-            "id": "28ae6e0cc817677a",
+            "id": "166430bb7537fad3",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Quiz!Arena/Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Kanban"
-            }
-          },
-          {
-            "id": "604fe5faf1290987",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Quiz!Arena/Documentação.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Documentação"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -241,13 +215,13 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "604fe5faf1290987",
+  "active": "166430bb7537fad3",
   "lastOpenFiles": [
     "Quiz!Arena/Kanban.md",
+    "Quiz!Arena/Documentação.md",
     "Quiz!Arena/Excalidraw/Brainstorm.md",
     "Quiz!Arena/Fluxograma.canvas",
     "Quiz!Arena/UML.md",
-    "Quiz!Arena/Documentação.md",
     "2026-09-30.md",
     "Untitled.base",
     "Quiz!Arena/Quiz Arena — UML.md",
