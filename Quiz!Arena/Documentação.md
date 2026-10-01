@@ -1,6 +1,11 @@
 ---
-title: Quiz Arena — Documentação Técnica
-tags: [quiz-arena, documentacao, firestore, api, deploy]
+title: Documentação Técnica
+tags:
+  - quiz-arena
+  - documentacao
+  - firestore
+  - api
+  - deploy
 status: vivo
 criado: 2026-09-30
 atualizado: 2026-09-30

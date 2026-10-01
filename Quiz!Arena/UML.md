@@ -1,6 +1,12 @@
 ---
-title: Quiz Arena — Diagramas UML
-tags: [quiz-arena, uml, plantuml, arquitetura, dominio, fluxograma]
+title: Diagramas UML
+tags:
+  - quiz-arena
+  - uml
+  - plantuml
+  - arquitetura
+  - dominio
+  - fluxograma
 status: vivo
 criado: 2026-09-30
 atualizado: 2026-09-30

@@ -32,17 +32,14 @@
             "id": "604fe5faf1290987",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Quiz!Arena/Fluxograma.canvas",
-                "viewState": {
-                  "x": 380,
-                  "y": 190,
-                  "zoom": -0.8921377660091477
-                }
+                "file": "Quiz!Arena/Documentação.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Fluxograma"
+              "icon": "lucide-file",
+              "title": "Documentação"
             }
           }
         ],
@@ -246,11 +243,11 @@
   },
   "active": "604fe5faf1290987",
   "lastOpenFiles": [
-    "Quiz!Arena/Documentação.md",
     "Quiz!Arena/Kanban.md",
     "Quiz!Arena/Excalidraw/Brainstorm.md",
     "Quiz!Arena/Fluxograma.canvas",
     "Quiz!Arena/UML.md",
+    "Quiz!Arena/Documentação.md",
     "2026-09-30.md",
     "Untitled.base",
     "Quiz!Arena/Quiz Arena — UML.md",
