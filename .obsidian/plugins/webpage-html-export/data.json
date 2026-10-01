@@ -10,12 +10,9 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "/home/hashfall/Projects/Etec/quizarena/docs",
+    "exportPath": "/home/hashfall/Downloads",
     "filesToExport": [
-      "Quiz!Arena/Fluxograma.canvas",
-      "Quiz!Arena/Kanban.md",
-      "Quiz!Arena/UML.md",
-      "Quiz!Arena/Documentação.md"
+      "Quiz!Arena"
     ],
     "useFallbackRenderer": false,
     "addBodyClasses": true,
@@ -201,7 +198,7 @@
       "alwaysEnabled": false,
       "hideSettingsButton": true
     },
-    "relativeHeaderLinks": false,
+    "relativeHeaderLinks": true,
     "includeJS": true,
     "includeCSS": true,
     "inlineMedia": false,
@@ -210,7 +207,7 @@
     "inlineFonts": false,
     "inlineOther": false,
     "combineAsSingleFile": false,
-    "offlineResources": false,
+    "offlineResources": true,
     "themeName": "",
     "slugifyPaths": true,
     "flattenExportPaths": false,
