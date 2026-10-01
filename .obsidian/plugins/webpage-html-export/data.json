@@ -9,7 +9,7 @@
     "makeHeadersTrees": true,
     "postProcess": true,
     "displayProgress": true,
-    "inlineHTML": true,
+    "inlineHTML": false,
     "exportPath": "/home/hashfall/Downloads",
     "filesToExport": [
       "Quiz!Arena"
@@ -70,8 +70,8 @@
     },
     "fileNavigationOptions": {
       "featureId": "file-navigation",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -89,8 +89,8 @@
     },
     "searchOptions": {
       "featureId": "search",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -127,8 +127,8 @@
     },
     "graphViewOptions": {
       "featureId": "graph-view",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -184,8 +184,8 @@
     },
     "rssOptions": {
       "featureId": "rss",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "siteUrl": "",
@@ -201,15 +201,15 @@
     "relativeHeaderLinks": true,
     "includeJS": true,
     "includeCSS": true,
-    "inlineMedia": true,
-    "inlineCSS": true,
-    "inlineJS": true,
-    "inlineFonts": true,
-    "inlineOther": true,
+    "inlineMedia": false,
+    "inlineCSS": false,
+    "inlineJS": false,
+    "inlineFonts": false,
+    "inlineOther": false,
     "combineAsSingleFile": false,
     "offlineResources": true,
     "themeName": "",
-    "slugifyPaths": false,
+    "slugifyPaths": true,
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
@@ -225,7 +225,7 @@
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "raw-documents",
+  "exportPreset": "online",
   "openAfterExport": true,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",

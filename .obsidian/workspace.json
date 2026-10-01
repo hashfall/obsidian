@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "91843b76b84ced1e",
+        "id": "c4ff934e5b49e7eb",
         "type": "tabs",
         "children": [
           {
-            "id": "166430bb7537fad3",
+            "id": "a871ab3d6e6602e3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -215,13 +215,13 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "166430bb7537fad3",
+  "active": "a871ab3d6e6602e3",
   "lastOpenFiles": [
-    "Quiz!Arena/Kanban.md",
-    "Quiz!Arena/Documentação.md",
-    "Quiz!Arena/Excalidraw/Brainstorm.md",
     "Quiz!Arena/Fluxograma.canvas",
     "Quiz!Arena/UML.md",
+    "Quiz!Arena/Documentação.md",
+    "Quiz!Arena/Kanban.md",
+    "Quiz!Arena/Excalidraw/Brainstorm.md",
     "2026-09-30.md",
     "Untitled.base",
     "Quiz!Arena/Quiz Arena — UML.md",
