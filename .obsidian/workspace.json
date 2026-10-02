@@ -11,38 +11,17 @@
             "id": "a871ab3d6e6602e3",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Quiz!Arena/Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "Quiz!Arena/Documentação.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Kanban"
-            }
-          },
-          {
-            "id": "f7fea778524f8845",
-            "type": "leaf",
-            "state": {
-              "type": "config-sync-center",
-              "state": {},
-              "icon": "arrow-left-right",
-              "title": "Sync Center"
+              "icon": "lucide-file",
+              "title": "Documentação"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,8 +79,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -219,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,12 +219,13 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "f7fea778524f8845",
+  "active": "a871ab3d6e6602e3",
   "lastOpenFiles": [
     "Quiz!Arena/Fluxograma.canvas",
-    "Quiz!Arena/Kanban.md",
-    "Quiz!Arena/UML.md",
     "Quiz!Arena/Documentação.md",
+    "Quiz!Arena/Documentação.md",
+    "Quiz!Arena/UML.md",
+    "Quiz!Arena/Kanban.md",
     "Quiz!Arena/Excalidraw/Brainstorm.md",
     "2026-09-30.md",
     "Untitled.base",
