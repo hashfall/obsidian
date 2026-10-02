@@ -11,10 +11,17 @@
             "id": "a871ab3d6e6602e3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "Quiz!Arena/Fluxograma.canvas",
+                "viewState": {
+                  "x": 344.5753617083195,
+                  "y": 171.97842930214605,
+                  "zoom": -0.4921377660091477
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Fluxograma"
             }
           }
         ]
