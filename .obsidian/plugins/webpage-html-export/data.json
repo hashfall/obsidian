@@ -12,7 +12,7 @@
     "inlineHTML": false,
     "exportPath": "/home/hashfall/Downloads",
     "filesToExport": [
-      "Quiz!Arena"
+      "QuizArena"
     ],
     "useFallbackRenderer": false,
     "addBodyClasses": true,
