@@ -37,7 +37,7 @@ kanban-plugin: board
 	#frontend #backend #auth
 - [ ] Adicionar na interface de Admin um sistema para **curadoria e correção de questões** (ajuste manual nas questões e alternativas já armazenadas no firestore)
 	#frontend #backend #firebase
-- [ ] Adicionar na interface de Admin um sistema para **carregar novas questões** a partir de um arquivo csv ou xls com novas questões, seguindo todos os padrões atuais.
+- [ ] Adicionar na interface de Admin um sistema para **carregar novas questões** a partir de um arquivo csv ou xls, seguindo todos os padrões atuais.
 	#frontend #backend #firebase
 
 
