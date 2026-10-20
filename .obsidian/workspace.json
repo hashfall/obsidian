@@ -30,8 +30,21 @@
               "icon": "lucide-trello",
               "title": "Kanban"
             }
+          },
+          {
+            "id": "680dc67fe6e796b5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Química/Drawing 2026-10-20 18.30.07.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-20 18.30.07.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -230,13 +243,15 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "a871ab3d6e6602e3",
+  "active": "680dc67fe6e796b5",
   "lastOpenFiles": [
+    "QuizArena/Kanban.md",
+    "Química/Drawing 2026-10-20 18.30.07.excalidraw.md",
+    "Química",
     "QuizArena/Fluxograma.canvas",
     "QuizArena/Documentação.md",
     "Quiz!Arena/Untitled.base",
     "Untitled.md",
-    "QuizArena/Kanban.md",
     "Quiz!Arena/UML.md",
     "Quiz!Arena/Excalidraw/Brainstorm.md",
     "2026-09-30.md",
