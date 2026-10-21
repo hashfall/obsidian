@@ -11,36 +11,29 @@
             "id": "a871ab3d6e6602e3",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "QuizArena/Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Kanban"
-            }
-          },
-          {
-            "id": "680dc67fe6e796b5",
-            "type": "leaf",
-            "state": {
               "type": "excalidraw",
               "state": {
                 "file": "Química/Drawing 2026-10-20 18.30.07.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-20 18.30.07.excalidraw"
+            }
+          },
+          {
+            "id": "ffba17b179473e53",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Química/Projeto.canvas",
+                "viewState": {
+                  "x": -385.8820535503102,
+                  "y": -44.982940056633396,
+                  "zoom": 0.6
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Projeto"
             }
           }
         ],
@@ -243,10 +236,12 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "680dc67fe6e796b5",
+  "active": "ffba17b179473e53",
   "lastOpenFiles": [
-    "QuizArena/Kanban.md",
     "Química/Drawing 2026-10-20 18.30.07.excalidraw.md",
+    "Química/Projeto.canvas",
+    "Química/Untitled Kanban.md",
+    "QuizArena/Kanban.md",
     "Química",
     "QuizArena/Fluxograma.canvas",
     "QuizArena/Documentação.md",

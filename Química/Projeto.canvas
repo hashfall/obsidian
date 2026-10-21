@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"b5ec140459be2ef4","type":"group","x":-360,"y":480,"width":2000,"height":1120,"label":"ESTEQUIOMÈTRICO"},
+		{"id":"b079065f0e14354c","type":"group","x":-2370,"y":480,"width":1960,"height":1120,"label":"HOME"},
+		{"id":"f98da2da4c2cef91","type":"group","x":-2370,"y":1720,"width":1960,"height":1120,"label":"BALANCEMENTO"},
+		{"id":"b210422774eb3114","type":"group","x":-2350,"y":560,"width":740,"height":1000,"label":"TODO"},
+		{"id":"86e911a60fe628e2","type":"group","x":-720,"y":-380,"width":620,"height":700,"label":"EQUIPE"},
+		{"id":"9f1335cfbe69dcf3","type":"group","x":-2350,"y":1780,"width":370,"height":1000,"label":"TODO"},
+		{"id":"99e5e6da1ddfcd53","type":"group","x":-320,"y":560,"width":360,"height":1000,"label":"TODO"},
+		{"id":"83f2ac38408d117a","type":"text","text":"HOME\n\n#Miguel\n#Vitor\n#Veronica","x":-700,"y":-360,"width":250,"height":140},
+		{"id":"d15c6328b8303da6","type":"text","text":"**BALANCEAMENTO**\n*Back-end*\n\n#Murilo\n#Kayki\n#Marcos\n#Caioli\n","x":-700,"y":-160,"width":250,"height":200},
+		{"id":"9ec1a6ed5d7ab733","type":"text","text":"**BALANCEAMENTO**\n*Front-end*\n\n#Kaue\n#Yago\n#Ramon\n","x":-400,"y":-160,"width":250,"height":200},
+		{"id":"3416955430f1579d","type":"text","text":"**ESTEQUIOMÉTRICO**\n*Back-end*\n\n#Paulo\n#Rafael\n#Ryan\n","x":-700,"y":80,"width":250,"height":200},
+		{"id":"d533d643909ebea2","type":"text","text":"**ESTEQUIOMÉTRICO**\n*Front-end*\n\n#Otávio\n#Victor\n#Pedro\n","x":-400,"y":80,"width":250,"height":200},
+		{"id":"460b60e29710e033","type":"text","text":"Estilos Globais\n\n#Sena\n#Wanderson","x":-400,"y":-360,"width":250,"height":140},
+		{"id":"fdf85d0c187165d4","type":"text","text":"Carrousel","x":-2310,"y":800,"width":250,"height":60},
+		{"id":"ce7476e6219999c7","type":"text","text":"Cards para Escolha da Ferramentas","x":-2310,"y":920,"width":250,"height":60},
+		{"id":"d0379329269bb362","type":"text","text":"Quantidade de Matéria","x":-1939,"y":830,"width":250,"height":60},
+		{"id":"2df32356fab71bd9","x":-1939,"y":890,"width":250,"height":60,"type":"text","text":"Volume Molar"},
+		{"id":"24233c9c4ec58b29","type":"text","text":"Responsividade para Mobile e PC","x":-2310,"y":600,"width":250,"height":60},
+		{"id":"79e4b9948ec1d04b","type":"text","text":"Nome da Aplicação","x":-2310,"y":700,"width":250,"height":60},
+		{"id":"d36b090a7a84f4a5","x":-1939,"y":950,"width":250,"height":60,"type":"text","text":"Conversão de Massa"},
+		{"id":"3327ab02e4c61d09","x":-1937,"y":1010,"width":250,"height":60,"type":"text","text":"Balanceamento de Equação"},
+		{"id":"f2992368114db3d8","x":-1937,"y":1070,"width":250,"height":60,"type":"text","text":"Cálculo Estequiométrico"},
+		{"id":"0b328ab9909d2c80","type":"text","text":"Picker de Elemento da Tabela","x":-280,"y":600,"width":250,"height":60},
+		{"id":"973c6390f883dfca","x":-280,"y":700,"width":250,"height":60,"type":"text","text":"Input Quantidade (cada átomo)"},
+		{"id":"28c123552d5fcd19","x":-2300,"y":1840,"width":250,"height":60,"type":"text","text":"2 Pickers de Elementos"},
+		{"id":"72b832cbc4b9b361","x":-2300,"y":1940,"width":250,"height":60,"type":"text","text":"Front de Escolha de Elemento"}
+	],
+	"edges":[
+		{"id":"9c65bc6e5ef9dbf7","fromNode":"fdf85d0c187165d4","fromSide":"bottom","toNode":"ce7476e6219999c7","toSide":"top"},
+		{"id":"24cfbde595cb68bd","fromNode":"ce7476e6219999c7","fromSide":"right","toNode":"d0379329269bb362","toSide":"left"},
+		{"id":"ee6b20c67b2e68e2","fromNode":"ce7476e6219999c7","fromSide":"right","toNode":"2df32356fab71bd9","toSide":"left"},
+		{"id":"96f1808e8a5039fc","fromNode":"ce7476e6219999c7","fromSide":"right","toNode":"d36b090a7a84f4a5","toSide":"left"},
+		{"id":"da4f805d955fdd2f","fromNode":"ce7476e6219999c7","fromSide":"right","toNode":"3327ab02e4c61d09","toSide":"left"},
+		{"id":"49a00ce2b63bb4d4","fromNode":"ce7476e6219999c7","fromSide":"right","toNode":"f2992368114db3d8","toSide":"left"}
+	]
+}
