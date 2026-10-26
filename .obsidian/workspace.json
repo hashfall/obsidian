@@ -27,16 +27,17 @@
               "state": {
                 "file": "Química/Projeto.canvas",
                 "viewState": {
-                  "x": -273.8972058131878,
-                  "y": 435.4331477958309,
-                  "zoom": -0.9999999999999999
+                  "x": 78.56680046127371,
+                  "y": 739.3235239452918,
+                  "zoom": 1
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Projeto"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,10 +236,10 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "a871ab3d6e6602e3",
+  "active": "ffba17b179473e53",
   "lastOpenFiles": [
-    "Química/Projeto.canvas",
     "Química/Drawing 2026-10-20 18.30.07.excalidraw.md",
+    "Química/Projeto.canvas",
     "Química/Untitled Kanban.md",
     "QuizArena/Kanban.md",
     "Química",
