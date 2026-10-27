@@ -27,9 +27,9 @@
               "state": {
                 "file": "Química/Projeto.canvas",
                 "viewState": {
-                  "x": 613.5565562611013,
-                  "y": -8156.12310697512,
-                  "zoom": -1.2000000000000006
+                  "x": -32.17707807710627,
+                  "y": -8602.95472625712,
+                  "zoom": -5.551115123125783e-16
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -215,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
