@@ -27,8 +27,8 @@
               "state": {
                 "file": "Química/Projeto.canvas",
                 "viewState": {
-                  "x": 327.98804198391326,
-                  "y": 77.36421909908353,
+                  "x": 334.21655760891326,
+                  "y": 74.65132847408353,
                   "zoom": 1
                 }
               },
@@ -36,7 +36,8 @@
               "title": "Projeto"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Marcos",
+                "query": "tag:#Bruno",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -236,10 +237,10 @@
       "config-sync:Config Sync": false
     }
   },
-  "active": "a871ab3d6e6602e3",
+  "active": "ffba17b179473e53",
   "lastOpenFiles": [
-    "Química/Projeto.canvas",
     "Química/Drawing 2026-10-20 18.30.07.excalidraw.md",
+    "Química/Projeto.canvas",
     "Química/Untitled Kanban.md",
     "QuizArena/Kanban.md",
     "Química",
