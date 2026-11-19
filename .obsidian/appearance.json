@@ -1,4 +1,5 @@
 {
   "accentColor": "#f55cc4",
-  "cssTheme": "Sacred Geometry Systems"
+  "cssTheme": "Sacred Geometry Systems",
+  "showRibbon": true
 }
